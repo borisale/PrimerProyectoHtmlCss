@@ -1,0 +1,162 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Contenedores */
+.welcome_container,
+.location_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+}
+
+.function_container, .aboutUs_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+}
+
+.welcome_container,
+.location_container {
+    background-color: #eca85b;
+}
+
+.function_container {
+    background-color: rgba(106, 168, 177, 1);
+    
+}
+
+.aboutUs_container{
+    background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('../images/bg-person.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%
+}
+
+
+/* Contenido de bienvenida */
+.welcome_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eff1f1;
+    border-radius: 15px;
+    width: 100%;
+    height: 75%;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 1);
+    padding: 0 70px 30px 70px;
+    margin-left: 8%;
+}
+
+.welcome_title {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.aside_img {
+    width: 90%;
+    height: 75%;
+    border-radius: 15px;
+}
+
+/* Contenido de Sobre nosotros */
+.aboutUs_article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 80%;
+    height: 75%;
+    padding-right: 32%;
+    margin: 8%;
+}
+
+.aboutUs_title{
+    color: #eca85b;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+.aboutUs_text{
+    color: white;
+}
+
+/* Contenido de funcionalidades */
+.functions_article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 45% 2% 8%;
+}
+
+.functions_title {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.functions {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.function_image {
+    width: 100%;
+    height: 100%;
+}
+
+/* Contenido de Localización */
+.location_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eff1f1;
+    border-radius: 15px;
+    width: auto;
+    height: 75%;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    padding: 0 70px 30px 70px;
+    margin-left: 8%;
+}
+
+.map_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}

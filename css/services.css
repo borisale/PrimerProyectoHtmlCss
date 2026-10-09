@@ -1,0 +1,126 @@
+/* Generales */
+article {
+    @media (max-width: 600px) {
+        margin-bottom: 3%;
+    }
+
+    @media (max-width: 1000px) {
+        margin-bottom: 3%;
+    }
+
+    margin-bottom: 3%;
+}
+
+/* Contenedores */
+.instalaciones_container,
+.maquinaria_container,
+.cursos_container,
+.excursiones_container {
+    width: 100%;
+    height: fit-content;
+}
+
+.instalaciones_container {
+    background-color: blue;
+}
+
+.maquinaria_container {
+    background-color: red;
+}
+
+.cursos_container {
+    background-color: chartreuse;
+}
+
+.excursiones_container {
+    background-color: brown;
+}
+
+/* Contenido instalaciones */
+.instalaciones_container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 5% 30% 0 8%;
+    @media(max-width: 600px){
+        padding: 15% 20% 15% 8%;
+    }
+    @media(max-width: 1000px){
+        padding: 15% 20% 15% 8%;
+    }
+}
+
+h2 {
+    margin-bottom: 3%;
+    @media (max-width: 600px){
+        margin-bottom: 10%;
+    }
+    @media (max-width: 1000px){
+        margin-bottom: 8%;
+    }
+}
+
+.instalaciones_btn {
+    background-color: #4da9c7;
+    border: 1px solid #22505f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    width: fit-content;
+    margin-top: 3%;
+    @media (max-width: 600px){
+        margin-top: 10%;
+    }
+    @media (max-width: 1000px){
+        margin-top: 8%;
+    }   
+}
+
+/* Contenido maquinaria */
+.maquinaria_container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 5% 30% 0 8%;
+    @media(max-width: 600px){
+        padding: 15% 20% 15% 8%;
+    }
+    @media(max-width: 1000px){
+        padding: 15% 20% 15% 8%;
+    }
+}
+
+/* Contenido cursos */
+.cursos_container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 5% 30% 0 8%;
+    @media(max-width: 600px){
+        padding: 15% 20% 15% 8%;
+    }
+    @media(max-width: 1000px){
+        padding: 15% 20% 15% 8%;
+    }
+}
+
+/* Contenido excursiones  */
+.excursiones_container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 5% 30% 0 8%;
+    @media(max-width: 600px){
+        padding: 15% 20% 15% 8%;
+    }
+    @media(max-width: 1000px){
+        padding: 15% 20% 15% 8%;
+    }
+}

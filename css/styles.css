@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Menú móvil */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 4 rem;
+    cursor: pointer;
+}
+
+@media (max-width: 780px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #a7c3cc;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .nav-links li {
+        padding: 0.8rem 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+/* Menú */
+#header {
+    background-color: #a7c3cc;
+    display: grid;
+    padding-left: 4%;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    margin: 0;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: flex-end;
+    padding-right: 12%;
+}
+
+/* #nav ul {
+    list-style-type: none;
+    display: grid;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    grid-template-columns: repeat(3, 150px);
+    padding: 2%;
+}
+
+#nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+} */
+
+body {
+    background-color: #a3b6b0;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#ClimBS {
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    color: #000;
+
+    @media(max-width: 750px) {
+        font-size: 40px;
+    }
+}
+
+/* Footer */
+#footer {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 0;
+    width: 100%;
+    height: 130px;
+    display: grid;
+    align-items: center;
+}
+
+.copyright {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
