@@ -1,76 +1,71 @@
+/* Equipo */
 .contact_title {
-    margin: 50px auto 70px auto;
+    margin: 2.5rem 1rem;
+    text-align: center;
 }
 
 .title_text {
     color: #34383d;
-    font-weight: bold;
-    font-size: 40px;
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
 }
 
 .container {
-    width: 90%;
-    height: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    width: min(90%, 1200px);
+    margin: 0 auto;
 }
 
 .card {
-    width: auto;
-    height: auto;
-    background-color: #fff;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 20px;
-    padding: 70px 70px 30px 70px;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 25%);
 }
 
 .card_img {
     width: 130px;
     height: 230px;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
 }
 
 .card_text {
-    padding: 1rem;
-    text-align: justify;
+    text-align: center;
 }
 
+
+/* Formulario */
 .form_title {
-    font-family: Arial, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 60px;
+    margin: 0 0 2rem;
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    text-align: center;
 }
 
-.contact_form {
-    width: auto;
-    height: auto;
-    margin-top: 100px;
-    background-color: #fff;
+.contact_section {
+    width: min(90%, 900px);
+    margin: 4rem auto;
+    padding: 2.5rem;
     border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 25%);
+}
+
+#contact_form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 70px 30px 70px;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.6);
+    gap: 1.25rem;
 }
 
 .name_surname,
 .phone_department {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
 }
 
 .name_container,
@@ -81,57 +76,46 @@
     margin-bottom: 25px;
 }
 
-#name,
-#surname1,
-#surname2,
-#phone {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 80%;
+.phone_department {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-#department {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
-}
-
-.phone_container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-}
-
-.department_container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-}
-
+.name_container,
+.surname1_container,
+.surname2_container,
+.phone_container,
+.department_container,
 .msg_container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 70px;
+    gap: 0.4rem;
+    min-width: 0;
+}
+
+#contact_form input:not([type="checkbox"]),
+#department,
+#message {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.65rem;
+    border: 1px solid #777;
+    border-radius: 5px;
+    font: inherit;
 }
 
 #message {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
+    min-height: 9rem;
+    resize: vertical;
 }
 
 .checkbox_container {
     display: flex;
-    align-items: center;
-    margin-bottom: 80px;
-    width: 100%;
+    align-items: flex-start;
+    gap: 0.5rem;
 }
 
-#terms {
-    margin-right: 10px;
+.checkbox_container input {
+    margin-top: 0.3rem;
 }
 
 .button_container {
@@ -140,18 +124,39 @@
 }
 
 .submit_btn {
-    background-color: #4da9c7;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
+    padding: 0.65rem 1.25rem;
     border: 1px solid #22505f;
-    padding: 10px 20px;
     border-radius: 5px;
-
+    background-color: #4da9c7;
+    color: #111;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .submit_btn:hover {
     background-color: #2d6375;
-    color: white;
-    cursor: pointer;
+    color: #fff;
+}
+
+/* Móvil */
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .name_surname {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .contact_form {
+        padding: 1.5rem;
+    }
+
+    .phone_department {
+        grid-template-columns: 1fr;
+    }
 }

@@ -5,6 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Servicios</title>
+
+  <!-- Links -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/services.css" />
+  <script src="../main.js"></script>
 </head>
 
 <body>
@@ -13,12 +18,12 @@
     <h1 id="ClimBS">ClimBS</h1>
     <nav id="nav">
       <!-- Botón -->
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Abrir menú">
         &#9776;
       </button>
       <!-- Barra -->
       <ul class="nav-links" id="nav-links">
-        <li><a href="index.html" aria-label="Inicio">Inicio</a></li>
+        <li><a href="../index.html" aria-label="Inicio">Inicio</a></li>
         <li><a href="services.html" aria-label="Servicios">Servicios</a></li>
         <li><a href="contact.html" aria-label="Contacto">Contacto</a></li>
       </ul>
@@ -27,74 +32,65 @@
   <!-- Fin header -->
 
   <!-- Contenido principal -->
-  <!-- Instalaciones -->
-  <section class="instalaciones_container">
-    <article>
-      <h2>Climb</h2>
-      <p>
-        Descubre una experiencia única de movimiento, desafío y adrenalina en nuestro rocódromo. Un espacio pensado para
-        principiantes y expertos que buscan superarse, mejorar su técnica y disfrutar del deporte de la escalada en un
-        entorno seguro y motivador. Con diferentes niveles de dificultad, rutas diseñadas para todos los perfiles y una
-        atmosfera dinámica, el rocódromo es el lugar ideal para entrenar, socializar y vivir nuevas emociones. Ya sea
-        para
-        divertirte con amigos, entrenar tu fuerza y equilibrio, o comenzar tu aventura en la escalada, aquí encontrarás
-        el
-        reto perfecto para crecer y disfrutar cada paso
-      </p>
-      <a href="#" class="instalaciones_btn">Saber más </a>
-    </article>
-  </section>
-  <!-- Fin instalaciones -->
+  <main>
+    <!-- Instalaciones -->
+    <section class="instalaciones_container">
+      <article>
+        <div class="service_content">
+          <h2>Rocódromo</h2>
+          <p>
+            Descubre una experiencia de movimiento, desafío y adrenalina en nuestro rocódromo. Hay rutas para distintos
+            niveles, diseñadas para entrenar la técnica, compartir y disfrutar de la escalada en un entorno seguro.
+          </p>
+        </div>
+        <img class="service_image" src="../images/rocodromo.svg" />
+      </article>
+    </section>
 
-  <!-- Maquinaria -->
-  <section class="maquinaria_container">
-    <article>
-      <h2>Maquinaria</h2>
-      <p>
-        Nuestro espacio cuenta con maquinaria moderna y funcional diseñada para complementar tus entrenamientos y
-        ayudarte
-        a alcanzar tus objetivos de forma efectiva. Desde equipos para fuerza y resistencia hasta herramientas para
-        trabajar movilidad, tonificación y acondicionamiento físico, cada máquina está pensada para ofrecer un
-        entrenamiento seguro, variado y adaptado a tu nivel. Ideal para complementar la escalada, mejorar tu condición
-        física y potenciar cada sesión, la maquinaria de nuestro gimnasio te acompaña en cada paso hacia un mejor
-        rendimiento
-      </p>
-    </article>
-  </section>
-  <!-- Fin maquinaria -->
+    <!-- Maquinaria -->
+    <section class="maquinaria_container">
+      <article>
+        <img class="service_image" src="../images/entrenamiento.svg" />
+        <div class="service_content">
+          <h2>Maquinaria</h2>
+          <p>
+            El espacio cuenta con maquinaria para complementar los entrenamientos y trabajar fuerza, resistencia y
+            movilidad. Estos equipos pueden ayudar a mejorar la condición física y complementar la práctica de la
+            escalada.
+          </p>
+        </div>
+      </article>
+    </section>
 
-  <!-- Cursos -->
-  <section class="cursos_container">
-    <article>
-      <h2>Eskola</h2>
-      <p>
-        Nuestros cursos de escalada están diseñados para acompañarte en cada etapa de tu aprendizaje, desde
-        principiantes
-        hasta escaladores que buscan perfeccionar su técnica. Con un enfoque práctico, seguro y personalizado, te
-        ayudamos
-        a desarrollar fuerza, equilibrio, confianza y habilidades específicas para progresar con éxito. Aprenderás con
-        instructores especializados, en un ambiente motivador y dinámico, ideal para mejorar tu rendimiento y disfrutar
-        al
-        máximo de este deporte
-      </p>
-    </article>
-  </section>
-  <!-- Fin cursos -->
+    <!-- Cursos -->
+    <section class="cursos_container">
+      <article>
+        <div class="service_content">
+          <h2>Cursos</h2>
+          <p>
+            Los cursos de escalada acompañan distintas etapas de aprendizaje, desde la iniciación hasta el
+            perfeccionamiento de la técnica. Se realizan con un enfoque práctico y atención a la seguridad.
+          </p>
+        </div>
+        <img class="service_image" src="../images/cursos.svg" />
+      </article>
+    </section>
 
-  <!-- Excursiones -->
-  <section class="excursiones_container">
-    <article>
-      <h2>Escalar en roca</h2>
-      <p>
-        Descubre la emoción de la escalada en la naturaleza con nuestras salidas guiadas a roca. Una experiencia pensada
-        para explorar paisajes impresionantes, poner a prueba tus habilidades y disfrutar de la aventura bajo la guía de
-        expertos. Cada salida combina seguridad, técnica y buena energía, ofreciendo un entorno ideal para aprender,
-        progresar y vivir momentos inolvidables en la pared. Perfecto para quienes buscan una experiencia deportiva,
-        desafiante y llena de conexión con la naturaleza
-      </p>
-    </article>
-  </section>
-  <!-- Fin excursiones -->
+    <!-- Excursiones -->
+    <section class="excursiones_container">
+      <article>
+        <img class="service_image" src="../images/excursiones.svg" />
+        <div class="service_content">
+          <h2>Excursiones en roca</h2>
+          <p>
+            Las salidas guiadas permiten practicar escalada en la naturaleza con atención a la seguridad, la técnica y
+            el
+            entorno. Consulta disponibilidad y requisitos antes de apuntarte.
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
   <!-- Fin contenido principal -->
 
   <!-- Footer -->
@@ -102,10 +98,5 @@
     <p class="copyright">&copy; 2026 ClimBS. Todos los derechos reservados.</p>
   </footer>
 </body>
-
-<!-- Links -->
-<link rel="stylesheet" href="../css/styles.css" />
-<link rel="stylesheet" href="../css/services.css" />
-<script src="../comp.js"></script>
 
 </html>
