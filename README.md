@@ -1,9 +1,6 @@
 # PrimerProyectoHtmlCss
 Proyecto inicial de html y ccss de bbk bootcamp
 
-`console.log`
+Página de ClimbBS, centro de escalada de alto rendimiento.
 
-```html
-<div class"hola">
-</div>div>
-console.aa```
+Página estática, cuenta con un formulario pero que no realiza ninguna función y con un iFrame para usar un mapa de ubicación
